@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 300px;
+    height: 100vh;
+    text-align: center;
+
+    border: 1px solid #BFBFBF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+}
+
+header a {
+    text-decoration: none;
+    color : #909090;
+}
+
+header .active, 
+header a:hover {
+    color: #000;
+}
+
+header ul {
+    padding: 0;
+}
+header li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.arrow {
+    width: 300px;
+    height: 105px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #BFBFBF;
+}
+
+.arrow a {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.arrow a:first-child {
+    border-right: 1px solid #BFBFBF;
+}
+
+main {
+    width: calc(100vw - 300px);
+    left: 300px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 60% auto;
+}
+
+aside {
+    height: 100vh;
+    background-image: url('../img/Background-right.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-position-x: 90px;
+}
+
+section {
+    padding-left: 32px;
+}
+
+section > div {
+    display: flex;
+    gap: 38px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    display:block;
+    border-top: 1px solid #BFBFBF;
+    padding-top: 12px;
+
+}
+
+section a span {
+    display: block;
+    color:#BFBFBF;
+}
+
+section article {
+    transform: translate3d(20px, 30%, 0px);
+    padding-right: 24px;
+}
+
+article > p {
+    font-size: 16px;
+    color:#000;
+    margin:0;
+    padding:0;
+}
+
+article h1 {
+    font-size: 42px;
+    margin: 0;
+    padding:0;
+    letter-spacing: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#date {
+    color:#909090;
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+article div p {
+    font-size: 14px;
+    color:#909090;
+}
+
+article div p span {
+    color:#3F3F3F;
+}
